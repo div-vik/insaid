@@ -1,0 +1,86 @@
+.about-us{
+    text-align: center;
+    margin: 50px 220px 100px;
+    padding: 30px 30px 50px;
+    background-color: #f8f9fc;
+}
+
+.about-us-heading{
+    margin-bottom: 30px;
+    font-size: 3.7rem;
+    font-weight: 400;
+    font-family: 'Barlow', sans-serif;
+}
+
+.about-us-content{
+    padding: 0 5rem;
+    font-size: 1.7rem;
+}
+
+.about-us-mainpart{
+    margin-bottom: 30px;
+}
+
+.about-us-image{
+    width: 30vw;
+    margin-bottom: 50px;
+}
+
+.profile{
+    display: none;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 60px;
+}
+
+.profile-photo{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+@media screen and (width: 1024px) {
+    .about-us{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 70px;
+    }
+    .about-us-image{
+        padding-left: 0;
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .about-us{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 70px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .about-us-image{
+        padding-left: 0;
+        width: 50vw;
+    }
+    .about-us-content{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .about-us{
+        margin: 30px;
+        padding-top: 0;
+    }
+    .about-us-image{
+        margin-bottom: 35px;
+    }
+    .about-us-heading{
+        font-size: 2.5rem;
+    }
+    .about-us-content{
+        font-size: 1rem;
+    }
+}

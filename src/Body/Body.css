@@ -1,0 +1,190 @@
+.body-item{
+    height: auto;
+    display: flex;
+    background-color: #faaf3f;
+    padding-bottom: 10px;
+}
+
+.describe{
+    width: 100%;
+    height: auto;
+    margin: 0px 250px 60px;
+    padding: 5px 0 20px;
+}
+
+.heading{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #f15a28;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    background-color: #fff;
+}
+
+.description{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.sub-description{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+@keyframes sheen {
+0% {
+    transform: skewY(-45deg) translateX(0);
+}
+100% {
+    transform: skewY(-45deg) translateX(12.5em);
+}
+}
+
+.download-button {
+    display: block;
+    position: absolute;
+    left: 330px;
+    transform: translate(-50%, -50%);
+}
+.button {
+    padding: 0.75em 2em;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 0.3em;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.button:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+}
+
+.button:hover {
+    background-color: #000;
+    color: #fff;
+    border-bottom: 4px solid darken(#000, 10%);
+}
+
+.button:hover::before {
+    transform: skewX(-45deg) translateX(13.5em);
+    transition: all 0.5s ease-in-out;
+}
+
+.poster{
+    width: 100%;
+    margin-right: 250px;
+}
+
+.poster img{
+    width: 100%;
+    height: 70vh;
+}
+
+@media screen and (width: 1024px) {
+    .describe{
+        margin-left: 100px;
+        margin-right: 0px;
+    }
+
+    .poster{
+        margin-right: 50px;
+    }
+
+    .heading{
+        font-size: 1.2rem;
+    }
+
+    .description{
+        font-size: 2.5rem;
+    }
+
+    .sub-description{
+        font-size: 1.3rem;
+    }
+
+    .download-button{
+        position: absolute;
+        left: 180px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .describe{
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+
+    .poster{
+        margin-right: 10px;
+    }
+
+    .heading{
+        font-size: 1rem;
+    }
+
+    .description{
+        font-size: 2rem;
+    }
+
+    .sub-description{
+        font-size: 1rem;
+    }
+
+    .download-button{
+        position: absolute;
+        left: 110px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .describe{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+
+    .poster{
+        margin-right: 10px;
+    }
+
+    .heading{
+        font-size: 0.9rem;
+    }
+
+    .description{
+        font-size: 1.8rem;
+    }
+
+    .sub-description{
+        font-size: 0.9rem;
+    }
+
+    .download-button{
+        position: absolute;
+        left: 110px;
+    }
+
+    .poster{
+        display: none;
+    }
+}
+
